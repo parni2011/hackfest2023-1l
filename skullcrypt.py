@@ -26,9 +26,9 @@ def decode(inp,key):
 
     return(out)
 
-opt = input("scramble(1)/unscramble(2)")
-key = list(map(int,input("Enter key as string of numbers ")))
-psWrd = list(input("Enter Password "))
+opt = input("Please choose one of the Option\nScramble (Encode) 1\nUnscramble(Decrypt) 2")
+psWrd = list(input("Enter String Input to Encypt/Decrypt : "))
+key = list(map(int,input("Enter Encrypt Key : ")))
 if opt == "1":
     print("".join(encode(psWrd,key)))
 if opt == "2":

@@ -1,8 +1,5 @@
-
-# Online Python - IDE, Editor, Compiler, Interpreter
-
 import random
-#Encode
+#DECODE
 def encode(inp,key):
     add = 0
     out = []
@@ -15,7 +12,7 @@ def encode(inp,key):
             add = 0
 
     return(out)
-#Decode
+#ENCODE
 def decode(inp,key):
     add = 0
     out = []
@@ -30,7 +27,7 @@ def decode(inp,key):
     return(out)
 
 opt = input("scramble(1)/unscramble(2)")
-key = list(map(int,input("Enter Key ")))
+key = list(map(int,input("Enter key as string of numbers ")))
 psWrd = list(input("Enter Password "))
 if opt == "1":
     print("".join(encode(psWrd,key)))
